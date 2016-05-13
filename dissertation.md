@@ -30,7 +30,16 @@ In Study 3, we used an open-ended essay format to investigate the perception of 
 # 1 Study 1
 # Method
 ## Participants
-Eighty-one European American undergraduate students (36 women and 45 men) at the University of Michigan (mean age = 18.95, S.D = 1.09, range from 18 to 23) and 69 Japanese undergraduate students (46 women and 23 men) from Waseda University (mean = 20.27, S.D = 1.038, range from 18 to 23), participated in the experiment to fulfill a course requirement. Tall of the European American students each self-identified as  European Americans who had spent at least the first 18 years of their lives in the United States.
+Eighty-one European American undergraduate students (36 women and 45 men) at the University of Michigan (mean age = 18.95, S.D = 1.09, range from 18 to 23) and 69 Japanese undergraduate students (46 women and 23 men) from Kyoto University (mean = 20.27, S.D = 1.038, range from 18 to 23), participated in the experiment to fulfill a course requirement. All of the European American students self-identified as European Americans who had spent at least the first 18 years of their lives in the United States.
+
+## Materials
+*Stimuli for emotion judgment.* We selected photographs of Caucasian and East Asian, male and female faces from a pre-tested set of stimuli (Beaupre & Hess, 2005). Digital images of 16 faces were used in a 2 x 2 x 2 [gender, ethnicity (Caucasian/East Asian), and expression (smiling or frowning)] design. There were two different individuals for each category, and participants did not see the picture of the same individual twice. For each of the faces, we created a series of stimuli that gradually morphed from neutral to extreme expressions in ten steps. All photographs, showing only the head, were presented as black-and-white passport style pictures.
+
+*Procedure.*
+In a within-subject study, participants were asked to answer questions in a paper-and-pencil format in their native language. Each participant observed one of two sets of stimuli; each set of stimuli included eight faces, counterbalanced for targeted emotion display (smiling, frowning), model’s race (Asian, White), and model’s gender (male, female). Each eight faces  had ten series of photos that morphed from neutral to extreme joy or extreme anger. Participants were asked to rate how strongly they thought the model felt each of 10 emotions *(0=Not At All, 1= A Little, 4= Somewhat, to 8= Extremely): surprise, amusement/enjoyment, contentment/satisfaction, happiness/pleasure, pride, disgust/hate, fear, contempt/scorn, sadness, and anger.*
+
+# Results and Discussions
+## Perception of Dialectical Emotions
 
 The special format on the left is called Markdown. You can easily make things *italic* and **bold**, as well as quote important people:
 
