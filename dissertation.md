@@ -27,6 +27,10 @@ In order to further explore the hypothesis, Study 2 additionally observed whethe
 
 In Study 3, we used an open-ended essay format to investigate the perception of mixed emotion across cultures.  Our understanding of how emotions are recognized is easily constrained by the methods we use to ask about that process.  Although simpler for the researcher, closed-ended methods limit the participants’ possible answers and explanations to those the researcher has pre-determined as likely or appropriate.  In contrast, free-response methods allow participants greater freedom to explain their process of reading facial expressions. We expected that the Japanese participants would report more opposite valence emotions than European Americans in these open-ended essays when asked about their perception of facial expressions.
 
+# 1 Study 1
+# Method
+## Participants
+Eighty-one European American undergraduate students (36 women and 45 men) at the University of Michigan (mean age = 18.95, S.D = 1.09, range from 18 to 23) and 69 Japanese undergraduate students (46 women and 23 men) from Waseda University (mean = 20.27, S.D = 1.038, range from 18 to 23), participated in the experiment to fulfill a course requirement. Tall of the European American students each self-identified as  European Americans who had spent at least the first 18 years of their lives in the United States.
 
 The special format on the left is called Markdown. You can easily make things *italic* and **bold**, as well as quote important people:
 
