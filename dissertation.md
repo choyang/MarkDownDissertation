@@ -40,55 +40,20 @@ In a within-subject study, participants were asked to answer questions in a pape
 
 # Results and Discussions
 ## Perception of Dialectical Emotions
+To test our hypothesis about cultural difference in the perception of dialectical emotions in facial expressions, we created a variable that captured the mean number of opposite-valence emotions perceived across facial stimuli for each participant.  We counted intensity ratings of 1 or higher (“a little” or more) for negative emotions in smiling faces (e.g., disgust/hate, fear, contempt/scorn, sadness, and anger) and for positive emotions in frowning faces (e.g.,*amusement/enjoyment, contentment/satisfaction, happiness/pleasure, and pride*). These counts were averaged across eight faces.  Using a repeated measures MANOVA, we tested for the between-subject factor of cultural group, controlling for the effects of stimuli set, and participant gender. Additionally, we controlled for the within-subject factors of valence of face (smiling versus frowning), model race (White, Asian), and model gender (female, male).  As predicted (see Figure 1), we found that Japanese participants (M=1.88, SE=0.12) reported more opposite-valence emotions than European American participants (M = 0.72, SE = 0.11; *F* (1, 146) = 47.87, *p* < .001; partial η2= .25 ). This finding applied to both smiling faces (*F*(1,146) =46.38, *p* <.001) and frowning faces (*F* (1,146) =33.67, *p* <.001).
 
-The special format on the left is called Markdown. You can easily make things *italic* and **bold**, as well as quote important people:
+Study 2 was designed to directly replicate. Study 1 while improving the experimental method by creating more gradation in the series of faces morphed from neutral to extreme displays. We further improved our methods by randomly presenting the photographs in a computer-based study rather than paper-and-pencil study. Due to time constraints, we only presented female faces and recruited female participants from both cultural groups. 
 
-> Writing MLA-formatted essays is much easier with markdowntomla.com. I use it all the time when I write essays to foreign dictators, as well as to my wife when I need her to pick up something from the store on the way home (we're a very formal family). (Obama)
+# Study 2
+## Participants
+Fifty-two female European American (M=19.12, SD=1.00) and 58 female international Japanese (M=23.17, SD=3.78) students at the University of Michigan were recruited for the study. As in Study 1, European American participants self-identified as European American and had lived in the United States for at least 18 years (average number of years outside the United States was M=0.67, SD=1.12). Qualified Japanese participants reported that they had spent no more than five years of their life outside Japan (average number of years outside Japan was M=1.28, SD=1.23). All European American participants had two parents and at least 2 grandparents who were US-born; Japanese participants’ generational background was similar, with 95% having two Japan-born parents and 97% having at least two Japan-born grandparents. European American students participated in the experiment to receive extra credit for an introductory psychology course; Japanese participants received either a 10-dollar gift certificate or extra course credit as compensation.
+## Procedure
+We used the same procedures and photographs (Beaupre & Hess, 2005) as in Study 1. For Study 2, however, four faces rather than eight faces were presented.  Faces were morphed from neutral to extreme emotion displays in twenty steps to create greater nuance than in Study 1, in which only ten steps were used. Participants completed a one-hour, computer-based (MediaLab) study in their native language.  In addition to the emotion intensity scales described in Study 1, participants completed a scale of internal and external attributions of emotions . Otherwise, the procedure was the same as in Study 1. 
 
-You can also play around with headings:
+## Results and Discussions
+*Perception of Dialectical Emotions*. To test our hypothesis about cultural difference in the perception of dialectical emotions in facial expressions, we created the same variable as in Study 1, which captured the mean number of opposite-valence emotions perceived across facial stimuli for each participant.  These counts were averaged across the four faces.  Using a repeated measures MANOVA, we tested for the between-subject factor of cultural group controlling for the within-subject factors of stimulus set, valence (smiling or frowning), and model race (White or Asian).  Replicating the results from Study 1, we found that Japanese participants (M=1.39, SE=0.15) reported more opposite-valence emotions than European American participants (M = 0.92, SE = 0.16; *F* (1, 107) = 4.88, *p* = .03; partial η2= .04).  There were no significant effects of stimulus, race of the model, or emotional display.
 
-# Important Stuff
+In Study 3, we wanted to further explore attributions of emotions to investigate the reasons for the cultural differences in the perception of dialectical emotions. To do so, we used an open-ended method in addition to a closed-ended format, and content-coded participants’ essays.  
+Russell and colleagues (1993) refer to Woodworth and Schlosberg (1954) who describe facial expressions as having emotion labels that belong to “broad, overlapping cluster[s]...rather than specific, discrete basic emotions” (348).  Using the emotion terms described by participants, we created a set of emotion clusters to better capture participants’ descriptions of emotions.  These emotion clusters are based on Ekman’s (1997) categories that group similar/related emotion labels into groups to represent the basic and universal emotion clusters .
 
-I'm going to talk about really important stuff here.
 
-## Important Stuff I am Wearing
-
-There's a lot of important stuff out there, but the stuff I'm wearing is a pretty large subset of it. Let's further explore the topic of my clothing.
-
-### Pants
-
-My belt holds my pants up, but my belt loops hold my belt up. Who's the real hero?
-
-### Socks
-
-Feet can get pretty cold without an external layer of cloth to hold in their heat. I'm not keeping score or anything, but I'd say socks rank pretty high up there.
-
-# Non-important Stuff
-
-Actually, most stuff is pretty important. I'll leave this section blank. Except for, of course, the previous sentence.
-
-Need a page break? Just type three dashes on an empty line.
-
----
-
-Whoa, so much more room on this page. There are two things left to cover: the special **author**, **institution**, **runninghead**, **title**, **abstract**, and **keywords** section at the top; and the work's cited page. The former is used for the MLA heading, numbering the pages, and naming your downloaded PDF. The later is pretty self explanatory (look at the markdown source code at the bottom of this essay).
-
-For help generating those citations, check out bibme.org, and citationmachine.net. Be careful citing Wikipedia, but there's also a handy "cite this page" button on every page.
-
----
-
-# Conclusions and Future Study
-
-Get out there and research some cool things to write about! Or just start editing the markdown on the left. Either way, let me know if you have any suggestions for improvement on twitter @cgenco, or through my website at http://christian.gen.co (where I also have a lecture on how to go to college for free, and other websites I've made).
-
-Want this for MLA? Head over to http://MarkdownToMLA.com
-
----
-
-# References
-
-Egan, G. (1994). Permutation city. New York: HarperPrism.
-
-Hacker News. (2015, March 18). In *Wikipedia, The Free Encyclopedia*. Retrieved 08:46, April 7, 2015, from http://en.wikipedia.org/w/index.php?title=Hacker_News&oldid=651986110
-
-Rowling, J. (1999). *Harry Potter and the Chamber of Secrets*. New York: Arthur A. Levine Books.
