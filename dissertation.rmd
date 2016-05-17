@@ -1,3 +1,6 @@
+---
+output: word_document
+---
 author: Yay-hyung cho
 institution: The University of Michigan
 title: Perception of Mixed Emotion Across Cultures 

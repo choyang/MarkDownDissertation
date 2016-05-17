@@ -1,6 +1,6 @@
 ---
-title: "The title"
-shorttitle: "Title"
+title: "Perception of Mixed Emotion Across Cultures"
+shorttitle: "EMOTION AND CULTURE"
 author: 
   - name: Yay-hyung cho
     affiliation: 1
@@ -37,7 +37,28 @@ output: papaja::apa6_pdf
 ```{r message = FALSE, warning = FALSE}
 library("papaja")
 apa_prepare_doc() # Prepare document for rendering
+
+library("foreign")
+dataset1=read.spss("/Users/choyang/Documents/dissertation/Winter16_FM1.sav", to.data.frame=TRUE)
+dataset2=read.spss("/Users/choyang/Documents/dissertation/Winter16_FM2.sav", to.data.frame=TRUE)
+
+d1_hmean_t <- t.test(dataset1$h_dialmean~dataset1$nation)
+d1_hmean_t$p.value
+d1_hmean_t$parameter
+d1_hmean_t$estimate
+
+
+
+d1_amean_t <- t.test(dataset1$a_dialmean~dataset1$nation)
+d2_hmean_t <- t.test(dataset2$h_dialmean~dataset2$nation)
+d2_amean_t <- t.test(dataset2$a_dialmean~dataset2$nation)
 ```
+
+# Test
+(M=`r d1_hmean_t$estimate[["mean in group japanese"]]`, p=`r d1_hmean_t$p.value`)
+
+
+
 
 
 # Methods
