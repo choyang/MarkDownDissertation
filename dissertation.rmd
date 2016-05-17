@@ -1,14 +1,62 @@
 ---
-output: word_document
----
-author: Yay-hyung cho
-institution: The University of Michigan
-title: Perception of Mixed Emotion Across Cultures 
-runninghead: EMOTION AND CULTURE
-abstract: Previous cross-cultural comparisons of experiencing mixed emotion have found that East Asians experience positive and negative emotions simultaneously more than European Americans. However, not much is known about differences across cultures in how people perceive mixed emotion from facial expressions. By presenting facial expressions varying in valence, race, and gender to participants, we aimed to discover whether East Asians not only experience but also perceive more mixed emotions than European Americans. Study 1 compared the mean number of opposite-valence emotions perceived across 80 facial stimuli (i.e., perceiving both anger and happiness when presented with a frowning face), and found that Japanese participants perceived more mixed emotions than European Americans. Study 2 replicated the findings with more facial stimuli, and also found that this cultural difference was mediated by the degree to which participants believe the expression of emotion was caused by the person’s personality (internal attribution ). In study 3, we asked open-ended questions  and replicated the findings from study 1 and 2. The results from three studies consistently supported our hypothesis, showing that Japanese perceived more mixed emotions from facial expressions than European Americans.
+title: "Perception of Mixed Emotion Across Cultures"
+shorttitle: "EMOTION AND CULTURE"
+author: 
+  - name: Yay-hyung cho
+    affiliation: 1
+    corresponding: yes    # Define only one corresponding author
+    address: 
+    email: choyang@umich.edu
 
+affiliation:
+  - id: 1
+    institution: The University of Michigan
+
+abstract: |
+  Enter abstract here (note the indentation, if you start a new paragraph).
+  
+note: |  
+  Complete departmental affiliations for each author (note the indentation, if you start a new paragraph).
+
+  Enter author note here.
+  
+keywords: "keywords"
+
+wordcount: X
+
+class: man
+lang: english
+figsintext: no
+lineno: no
+bibliography:
+  - r-references.bib
+
+output: papaja::apa6_pdf
 ---
-One of the most commonly studied forms of mixed emotions is the simultaneous experience of positive and negative emotions, often termed “dialectical emotions”. Past  studies have found that East Asians experience more mixed emotions than European Americans (Bagozzi, Wong, & Yi, 1999; Kitayama, Markus, & Kurokawa, 2000; Schimmack, Oishi, & Diener, 2002). However, do East Asians perceive more mixed emotion when reading others’ emotional expressions? For example, do East Asians perceive more happiness in frowning faces and more anger in smiling faces than European Americans?  
+
+```{r message = FALSE, warning = FALSE}
+library("papaja")
+apa_prepare_doc() # Prepare document for rendering
+
+library("foreign")
+dataset1=read.spss("Data/Winter16_FM1.sav", to.data.frame=TRUE)
+dataset2=read.spss("Data/Winter16_FM2.sav", to.data.frame=TRUE)
+
+d1_hmean_t <- t.test(dataset1$h_dialmean ~ dataset1$nation)
+d1_hmean_t$p.value
+d1_hmean_t$parameter
+d1_hmean_t$estimate
+
+d1_amean_t <- t.test(dataset1$a_dialmean~dataset1$nation)
+d2_hmean_t <- t.test(dataset2$h_dialmean~dataset2$nation)
+d2_amean_t <- t.test(dataset2$a_dialmean~dataset2$nation)
+```
+
+
+# Test
+  `r d1_hmean_t$p.value`
+
+  One of the most commonly studied forms of mixed emotions is the simultaneous experience of positive and negative emotions, often termed “dialectical emotions”. Past  studies have found that East Asians experience more mixed emotions than European Americans (Bagozzi, Wong, & Yi, 1999; Kitayama, Markus, & Kurokawa, 2000; Schimmack, Oishi, & Diener, 2002). However, do East Asians perceive more mixed emotion when reading others’ emotional expressions? For example, do East Asians perceive more happiness in frowning faces and more anger in smiling faces than European Americans?  
 
 # Mixed Emotion Across Cultures
 There has been some debate regarding whether or not people can *‘feel’* both positive and negative emotions. Some researchers argue that people cannot simultaneously feel both emotions (Green, Goldman, & Salovey, 1993; Russell, 1980; Russell & Carroll, 1999), while others maintain that people can feel both emotions at the same time because positive and negative valences are independent dimensions (Cacioppo & Berntson, 1994; Diener & Iran-Nejad, 1986; Larsen, McGraw, & Cacioppo, 2001). 
@@ -43,7 +91,7 @@ In a within-subject study, participants were asked to answer questions in a pape
 
 # Results and Discussions
 ## Perception of Dialectical Emotions
-To test our hypothesis about cultural difference in the perception of dialectical emotions in facial expressions, we created a variable that captured the mean number of opposite-valence emotions perceived across facial stimuli for each participant.  We counted intensity ratings of 1 or higher (“a little” or more) for negative emotions in smiling faces (e.g., disgust/hate, fear, contempt/scorn, sadness, and anger) and for positive emotions in frowning faces (e.g.,*amusement/enjoyment, contentment/satisfaction, happiness/pleasure, and pride*). These counts were averaged across eight faces.  Using a repeated measures MANOVA, we tested for the between-subject factor of cultural group, controlling for the effects of stimuli set, and participant gender. Additionally, we controlled for the within-subject factors of valence of face (smiling versus frowning), model race (White, Asian), and model gender (female, male).  As predicted (see Figure 1), we found that Japanese participants (M=1.88, SE=0.12) reported more opposite-valence emotions than European American participants (M = 0.72, SE = 0.11; *F* (1, 146) = 47.87, *p* < .001; partial η2= .25 ). This finding applied to both smiling faces (*F*(1,146) =46.38, *p* <.001) and frowning faces (*F* (1,146) =33.67, *p* <.001).
+To test our hypothesis about cultural difference in the perception of dialectical emotions in facial expressions, we created a variable that captured the mean number of opposite-valence emotions perceived across facial stimuli for each participant.  We counted intensity ratings of 1 or higher (“a little” or more) for negative emotions in smiling faces (e.g., disgust/hate, fear, contempt/scorn, sadness, and anger) and for positive emotions in frowning faces (e.g.,*amusement/enjoyment, contentment/satisfaction, happiness/pleasure, and pride*). These counts were averaged across eight faces.  Using a repeated measures MANOVA, we tested for the between-subject factor of cultural group, controlling for the effects of stimuli set, and participant gender. Additionally, we controlled for the within-subject factors of valence of face (smiling versus frowning), model race (White, Asian), and model gender (female, male).  As predicted (see Figure 1), we found that Japanese participants (M=1.88, SE=0.12) reported more opposite-valence emotions than European American participants (M = 0.72, SE = 0.11; *F* (1, 146) = 47.87, *p* < .001; partial CI2= .25 ). This finding applied to both smiling faces (*F*(1,146) =46.38, *p* <.001) and frowning faces (*F* (1,146) =33.67, *p* <.001).
 
 Study 2 was designed to directly replicate. Study 1 while improving the experimental method by creating more gradation in the series of faces morphed from neutral to extreme displays. We further improved our methods by randomly presenting the photographs in a computer-based study rather than paper-and-pencil study. Due to time constraints, we only presented female faces and recruited female participants from both cultural groups. 
 
@@ -54,7 +102,7 @@ Fifty-two female European American (M=19.12, SD=1.00) and 58 female internationa
 We used the same procedures and photographs (Beaupre & Hess, 2005) as in Study 1. For Study 2, however, four faces rather than eight faces were presented.  Faces were morphed from neutral to extreme emotion displays in twenty steps to create greater nuance than in Study 1, in which only ten steps were used. Participants completed a one-hour, computer-based (MediaLab) study in their native language.  In addition to the emotion intensity scales described in Study 1, participants completed a scale of internal and external attributions of emotions . Otherwise, the procedure was the same as in Study 1. 
 
 ## Results and Discussions
-*Perception of Dialectical Emotions*. To test our hypothesis about cultural difference in the perception of dialectical emotions in facial expressions, we created the same variable as in Study 1, which captured the mean number of opposite-valence emotions perceived across facial stimuli for each participant.  These counts were averaged across the four faces.  Using a repeated measures MANOVA, we tested for the between-subject factor of cultural group controlling for the within-subject factors of stimulus set, valence (smiling or frowning), and model race (White or Asian).  Replicating the results from Study 1, we found that Japanese participants (M=1.39, SE=0.15) reported more opposite-valence emotions than European American participants (M = 0.92, SE = 0.16; *F* (1, 107) = 4.88, *p* = .03; partial η2= .04).  There were no significant effects of stimulus, race of the model, or emotional display.
+*Perception of Dialectical Emotions*. To test our hypothesis about cultural difference in the perception of dialectical emotions in facial expressions, we created the same variable as in Study 1, which captured the mean number of opposite-valence emotions perceived across facial stimuli for each participant.  These counts were averaged across the four faces.  Using a repeated measures MANOVA, we tested for the between-subject factor of cultural group controlling for the within-subject factors of stimulus set, valence (smiling or frowning), and model race (White or Asian).  Replicating the results from Study 1, we found that Japanese participants (M=1.39, SE=0.15) reported more opposite-valence emotions than European American participants (M = 0.92, SE = 0.16; *F* (1, 107) = 4.88, *p* = .03; partial CI2= .04).  There were no significant effects of stimulus, race of the model, or emotional display.
 
 In Study 3, we wanted to further explore attributions of emotions to investigate the reasons for the cultural differences in the perception of dialectical emotions. To do so, we used an open-ended method in addition to a closed-ended format, and content-coded participants’ essays.  
 Russell and colleagues (1993) refer to Woodworth and Schlosberg (1954) who describe facial expressions as having emotion labels that belong to “broad, overlapping cluster[s]...rather than specific, discrete basic emotions” (348).  Using the emotion terms described by participants, we created a set of emotion clusters to better capture participants’ descriptions of emotions. To test our hypotheses in the open-ended emotion data, we created groups of emotion words that are similar in valence, arousal level, and how they are communicated in real world. There were three steps in creating the emotion groups. First, the first author removed subjects' demographic information from the open-ended responses and coded each emotion word. Second, the first author created emotion groups out of similar words, using labels from research on basic emotion (Ekman, 1971) and appraisal research (Smith, 1985) as a general guide. Third, for each subject we coded the group as a 1 if they mentioned at least one word in the group and a 0 if they did not. 
@@ -65,7 +113,7 @@ Participants were 304 (172 women) undergraduate students from a large university
 ## Measures and Procedure
 Participants from both cultural groups completed a paper-and-pencil survey individually in their native language.  Each participant observed eight faces varying in the model’s race (White, Asian), gender (male, female), and emotional display (smiling, frowning). The stimulus set was the same one used in Study 1, 2 (Beaupre & Hess, 2005).  As in Study 2, we used only female faces.  Participants were asked to describe in their own words what each model was feeling (e.g., “For each face, please indicate the feeling(s) of the person in the picture.  You may list more than one feeling. What is Person X feeling?”), as well as their reasons for their choice of emotion (e.g., “Why do you think this person is feeling this way?”) using an open-ended essay format. Lastly, participants completed a series of demographic questions, including their gender, age, and number of years they had lived outside the United States (for European American participants) or Japan (for Japanese participants).
 ###Content Coding of Data
-The coding team consisted of five research assistants (Japanese or European American). All coders were blind to the demographic information. All five coders were trained to code open-ended data until the value of the inter-rater reliability Cronbach alpha reached an acceptable level (α range from .91 to 1.00).   
+The coding team consisted of five research assistants (Japanese or European American). All coders were blind to the demographic information. All five coders were trained to code open-ended data until the value of the inter-rater reliability Cronbach alpha reached an acceptable level (alpha range from .91 to 1.00).   
 
 *Perceived emotions coding*. For emotions, we coded participants’ answers to the question, ‘What do you think this person is feeling?’ Responses were coded when the participant attributed a feeling or motivational state to the model in the picture (i.e., “She is happy”); attributions to the situation of the model, however, were not coded (i.e., “She is in a great situation”). Table 1 displays the ten emotion groups that subjects perceived from faces, which we categorized into three categories: positive (high arousal positive/low arousal positive/pride/amusement/other positive), negative (anger/sadness/disgust/contempt/fear/general unpleasantness), and other emotions (surprise/in thought/unemotional/confusion/neutral). We added ‘general unpleasantness (e.g., unhappy) and ‘other positive’ (e.g., carefree) emotion groups based on prior research from appraisal theory of emotion (Smith, 1985) because they did not seem to fit well with any other emotion group. The final set of emotions, therefore, included five categories of positive emotions (high arousal positive/low arousal positive/amusement, pride, other positive), four categories of other  emotions (surprise, in thought/unemotional, confusion, neutral), and six categories of negative emotions (anger/sadness/disgust/contempt/fear). 
 
@@ -73,8 +121,8 @@ The coding team consisted of five research assistants (Japanese or European Amer
 
 #Results and Discussions
 *Number of emotion labels.*  European Americans (M=1.72, SE=.04) used more emotion labels than Japanese (M=1.50, SE=.04), t(290)=3.98, p<.001.
-*Target emotion recognition.*  Both European American and Japanese participants reported the targeted emotions (happiness, anger) more than any other emotion labels (see Table X). European American participants more frequently listed the target emotion happiness for smiling displays compared to Japanese participants, χ2 (4, N = 292) = 126.09, p< .001; a similar trend emerged for anger mentions in frowning displays, χ2 (4, N = 292) = 8.32, p=.07. 
-*Perception of Dialectical Emotions.* We computed a percentage score for each participant of how many opposite-valence emotions they recognized in a face, divided by the total number of emotions they observed.  For example, for smiling faces, a participant’s score would be the number of negative emotions they listed, divided by sum of the number of negative, positive, and neutral emotions they listed for that particular stimulus.  Using a repeated measure MANOVA, we tested for the between-subject factor of cultural group controlling for the effects of participant gender; we additionally controlled for the within-subject factors of display type (smiling versus frowning) and model race (White, Asian).  Replicating the results from Studies 1 and 2, we found that Japanese participants (M=0.20, SE=0.01) reported a greater percentage of opposite-valence emotions than European American participants (M=0.14, SE=0.01; F(1, 281) = 17.39, p< .001; partial η2= .06). We also found a greater percentage of dialectical emotions observed in Asian (M=.29, SE=.01) than White faces (M=.05, SE=.01), F(1, 281)=47.69, p<.001).  
+*Target emotion recognition.*  Both European American and Japanese participants reported the targeted emotions (happiness, anger) more than any other emotion labels (see Table X). European American participants more frequently listed the target emotion happiness for smiling displays compared to Japanese participants, chi2 (4, N = 292) = 126.09, p< .001; a similar trend emerged for anger mentions in frowning displays, chi2 (4, N = 292) = 8.32, p=.07. 
+*Perception of Dialectical Emotions.* We computed a percentage score for each participant of how many opposite-valence emotions they recognized in a face, divided by the total number of emotions they observed.  For example, for smiling faces, a participant’s score would be the number of negative emotions they listed, divided by sum of the number of negative, positive, and neutral emotions they listed for that particular stimulus.  Using a repeated measure MANOVA, we tested for the between-subject factor of cultural group controlling for the effects of participant gender; we additionally controlled for the within-subject factors of display type (smiling versus frowning) and model race (White, Asian).  Replicating the results from Studies 1 and 2, we found that Japanese participants (M=0.20, SE=0.01) reported a greater percentage of opposite-valence emotions than European American participants (M=0.14, SE=0.01; F(1, 281) = 17.39, p< .001; partial CI2= .06). We also found a greater percentage of dialectical emotions observed in Asian (M=.29, SE=.01) than White faces (M=.05, SE=.01), F(1, 281)=47.69, p<.001).  
 *Attribution Style Difference.*European American participants were more likely to make an internal attribution than Japanese participants (Table 3). When separately analyzed by the valence of facial expression, smiling displays produced more internal attributions than did frowning displays (Table 3). Consistent with previous literature, Japanese made more external attributions compared to European Americans for both non-social external attribution and social external attributions (Table 3 ). 
 
 #Discussion
@@ -84,9 +132,11 @@ We do not know which mechanism explains why East Asians perceive more mixed emot
 •	Interdependent self-construal
 •	The perceived authenticity of facial expression
 
+# References
+```{r create_r-references}
+r_refs(file = "r-references.bib")
+```
 
-
-
-
-
-
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+\setlength{\parskip}{8pt}
