@@ -37,21 +37,7 @@ output: papaja::apa6_pdf
 ```{r message = FALSE, warning = FALSE}
 library("papaja")
 apa_prepare_doc() # Prepare document for rendering
-
-library("foreign")
-dataset1=read.spss("Data/Winter16_FM1.sav", to.data.frame=TRUE)
-dataset2=read.spss("Data/Winter16_FM2.sav", to.data.frame=TRUE)
-
-d1_hmean_t <- t.test(dataset1$h_dialmean ~ dataset1$nation)
-d1_hmean_t$p.value
-d1_hmean_t$parameter
-d1_hmean_t$estimate
-
-d1_amean_t <- t.test(dataset1$a_dialmean~dataset1$nation)
-d2_hmean_t <- t.test(dataset2$h_dialmean~dataset2$nation)
-d2_amean_t <- t.test(dataset2$a_dialmean~dataset2$nation)
 ```
-
 
 # Test
   `r d1_hmean_t$p.value`
@@ -78,7 +64,7 @@ In order to further explore the hypothesis, Study 2 additionally observed whethe
 
 In Study 3, we used an open-ended essay format to investigate the perception of mixed emotion across cultures.  Our understanding of how emotions are recognized is easily constrained by the methods we use to ask about that process.  Although simpler for the researcher, closed-ended methods limit the participants’ possible answers and explanations to those the researcher has pre-determined as likely or appropriate.  In contrast, free-response methods allow participants greater freedom to explain their process of reading facial expressions. We expected that the Japanese participants would report more opposite valence emotions than European Americans in these open-ended essays when asked about their perception of facial expressions.
 
-# 1 Study 1
+# Study 1
 # Method
 ## Participants
 Eighty-one European American undergraduate students (36 women and 45 men) at a large Midwestern university (mean age = 18.95, S.D = 1.09, range from 18 to 23) and 69 Japanese undergraduate students (46 women and 23 men) from University in Tokyo area (mean = 20.27, S.D = 1.038, range from 18 to 23), participated in the experiment to fulfill a course requirement. All of the European American students self-identified as European Americans who had spent at least the first 18 years of their lives in the United States.
@@ -89,9 +75,26 @@ Eighty-one European American undergraduate students (36 women and 45 men) at a l
 *Procedure.*
 In a within-subject study, participants were asked to answer questions in a paper-and-pencil format in their native language. Each participant observed one of two sets of stimuli; each set of stimuli included eight faces, counterbalanced for targeted emotion display (smiling, frowning), model’s race (Asian, White), and model’s gender (male, female). Each eight faces  had ten series of photos that morphed from neutral to extreme joy or extreme anger. Participants were asked to rate how strongly they thought the model felt each of 10 emotions *(0=Not At All, 1= A Little, 4= Somewhat, to 8= Extremely): surprise, amusement/enjoyment, contentment/satisfaction, happiness/pleasure, pride, disgust/hate, fear, contempt/scorn, sadness, and anger.*
 
+```{r message = FALSE, warning = FALSE}
+library("foreign")
+dataset1=read.spss("Data/Winter16_FM1.sav", to.data.frame=TRUE)
+dataset2=read.spss("Data/Winter16_FM2.sav", to.data.frame=TRUE)
+
+d1_hmean_t <- t.test(dataset1$h_dialmean ~ dataset1$nation)
+d1_hmean_t$p.value
+d1_hmean_t$parameter
+d1_hmean_t$estimate
+
+d1_amean_t <- t.test(dataset1$a_dialmean~dataset1$nation)
+d2_hmean_t <- t.test(dataset2$h_dialmean~dataset2$nation)
+d2_amean_t <- t.test(dataset2$a_dialmean~dataset2$nation)
+```
+
 # Results and Discussions
 ## Perception of Dialectical Emotions
-To test our hypothesis about cultural difference in the perception of dialectical emotions in facial expressions, we created a variable that captured the mean number of opposite-valence emotions perceived across facial stimuli for each participant.  We counted intensity ratings of 1 or higher (“a little” or more) for negative emotions in smiling faces (e.g., disgust/hate, fear, contempt/scorn, sadness, and anger) and for positive emotions in frowning faces (e.g.,*amusement/enjoyment, contentment/satisfaction, happiness/pleasure, and pride*). These counts were averaged across eight faces.  Using a repeated measures MANOVA, we tested for the between-subject factor of cultural group, controlling for the effects of stimuli set, and participant gender. Additionally, we controlled for the within-subject factors of valence of face (smiling versus frowning), model race (White, Asian), and model gender (female, male).  As predicted (see Figure 1), we found that Japanese participants (M=1.88, SE=0.12) reported more opposite-valence emotions than European American participants (M = 0.72, SE = 0.11; *F* (1, 146) = 47.87, *p* < .001; partial CI2= .25 ). This finding applied to both smiling faces (*F*(1,146) =46.38, *p* <.001) and frowning faces (*F* (1,146) =33.67, *p* <.001).
+To test our hypothesis about cultural difference in the perception of dialectical emotions in facial expressions, we created a variable that captured the mean number of opposite-valence emotions perceived across facial stimuli for each participant.  We counted intensity ratings of 1 or higher (“a little” or more) for negative emotions in smiling faces (e.g., disgust/hate, fear, contempt/scorn, sadness, and anger) and for positive emotions in frowning faces (e.g.,*amusement/enjoyment, contentment/satisfaction, happiness/pleasure, and pride*). These counts were averaged across eight faces.  Using a repeated measures MANOVA, we tested for the between-subject factor of cultural group, controlling for the effects of stimuli set, and participant gender. Additionally, we controlled for the within-subject factors of valence of face (smiling versus frowning), model race (White, Asian), and model gender (female, male).  As predicted (see Figure 1), we found that Japanese participants (M=1.88, SE=0.12) reported more opposite-valence emotions than European American participants (M = 0.72, SE = 0.11; *F* (1, 146) = 47.87, *p* < .001; partial eta= .25). This finding applied to both smiling faces (*F*(1,146) =46.38, *p* <.) and frowning faces (*F* (1,146) =33.67, *p* <.001).
+
+
 
 Study 2 was designed to directly replicate. Study 1 while improving the experimental method by creating more gradation in the series of faces morphed from neutral to extreme displays. We further improved our methods by randomly presenting the photographs in a computer-based study rather than paper-and-pencil study. Due to time constraints, we only presented female faces and recruited female participants from both cultural groups. 
 
