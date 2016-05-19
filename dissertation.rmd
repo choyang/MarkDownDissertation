@@ -80,7 +80,10 @@ library("foreign")
 dataset1=read.spss("Data/Winter16_FM1.sav", to.data.frame=TRUE)
 dataset2=read.spss("Data/Winter16_FM2.sav", to.data.frame=TRUE)
 
-d1_hmean_t <- t.test(dataset1$h_dialmean ~ dataset1$nation)
+FM1_h_dialmean_welch <- t.test(dataset1$h_dialmean ~ dataset1$nation)
+FM1_a_dialmean_welch <- t.test(dataset1$a_dialmean ~ dataset1$nation)
+FM1_h_dialmean_welch
+FM1_a_dialmean_welch
 d1_hmean_t$p.value
 d1_hmean_t$parameter
 d1_hmean_t$estimate
@@ -92,7 +95,7 @@ d2_amean_t <- t.test(dataset2$a_dialmean~dataset2$nation)
 
 # Results and Discussions
 ## Perception of Dialectical Emotions
-To test our hypothesis about cultural difference in the perception of dialectical emotions in facial expressions, we created a variable that captured the mean number of opposite-valence emotions perceived across facial stimuli for each participant.  We counted intensity ratings of 1 or higher (“a little” or more) for negative emotions in smiling faces (e.g., disgust/hate, fear, contempt/scorn, sadness, and anger) and for positive emotions in frowning faces (e.g.,*amusement/enjoyment, contentment/satisfaction, happiness/pleasure, and pride*). These counts were averaged across eight faces.  Using a repeated measures MANOVA, we tested for the between-subject factor of cultural group, controlling for the effects of stimuli set, and participant gender. Additionally, we controlled for the within-subject factors of valence of face (smiling versus frowning), model race (White, Asian), and model gender (female, male).  As predicted (see Figure 1), we found that Japanese participants (M=1.88, SE=0.12) reported more opposite-valence emotions than European American participants (M = 0.72, SE = 0.11; *F* (1, 146) = 47.87, *p* < .001; partial eta= .25). This finding applied to both smiling faces (*F*(1,146) =46.38, *p* <.) and frowning faces (*F* (1,146) =33.67, *p* <.001).
+To test our hypothesis about cultural difference in the perception of dialectical emotions in facial expressions, we created a variable that captured the mean number of opposite-valence emotions perceived across facial stimuli for each participant.  We counted intensity ratings of 1 or higher (“a little” or more) for negative emotions in smiling faces (e.g., disgust/hate, fear, contempt/scorn, sadness, and anger) and for positive emotions in frowning faces (e.g.,*amusement/enjoyment, contentment/satisfaction, happiness/pleasure, and pride*). These counts were averaged across eight faces.  Using a repeated measures MANOVA, we tested for the between-subject factor of cultural group, controlling for the effects of stimuli set, and participant gender. Additionally, we controlled for the within-subject factors of valence of face (smiling versus frowning), model race (White, Asian), and model gender (female, male).  As predicted (see Figure 1), we found that Japanese participants (M=1.88, SE=0.12) reported more opposite-valence emotions than European American participants (M = 0.72, SE = 0.11; *F* (1, 146) = 47.87, *p* < .001; partial eta= .25, 95% [0.92, 1.63]). This finding applied to both smiling faces (*F*(1,146) =46.38, *p* <.001) and frowning faces (*F* (1,146) =33.67, *p* <.001).
 
 
 
