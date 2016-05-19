@@ -1,6 +1,6 @@
 
 
-setwd("C:/Users/TEMP/Documents/MarkDownDissertation") # first set your working directory to dissertation folder
+setwd("C:/TEMP/bcko/Documents/GitHub/MarkDownDissertation") # first set your working directory to dissertation folder
 
 
 library("foreign")	 # foreign library needed in order to read spss data
