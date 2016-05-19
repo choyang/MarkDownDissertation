@@ -1,4 +1,5 @@
-﻿*Demographics*
+﻿* Encoding: UTF-8.
+*Demographics*
 
 SORT CASES  BY nation.
 SPLIT FILE SEPARATE BY nation.
@@ -169,3 +170,19 @@ T-TEST GROUPS=nation(1 2)
   /MISSING=ANALYSIS
   /VARIABLES=a_dialmean
   /CRITERIA=CI(.95).
+
+
+
+
+DATASET ACTIVATE DataSet1.
+GLM h_dialmean a_dialmean BY nation WITH gender version
+  /WSFACTOR=SmileFrown 2 Polynomial 
+  /METHOD=SSTYPE(3)
+  /EMMEANS=TABLES(OVERALL) WITH(gender=MEAN version=MEAN)
+  /EMMEANS=TABLES(nation) WITH(gender=MEAN version=MEAN)
+  /EMMEANS=TABLES(SmileFrown) WITH(gender=MEAN version=MEAN)
+  /EMMEANS=TABLES(nation*SmileFrown) WITH(gender=MEAN version=MEAN)
+  /PRINT=DESCRIPTIVE ETASQ OPOWER PARAMETER 
+  /CRITERIA=ALPHA(.05)
+  /WSDESIGN=SmileFrown 
+  /DESIGN=gender version nation.
