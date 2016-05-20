@@ -39,8 +39,6 @@ library("papaja")
 apa_prepare_doc() # Prepare document for rendering
 ```
 
-# Test
-  `r d1_hmean_t$p.value`
 
   One of the most commonly studied forms of mixed emotions is the simultaneous experience of positive and negative emotions, often termed “dialectical emotions”. Past  studies have found that East Asians experience more mixed emotions than European Americans (Bagozzi, Wong, & Yi, 1999; Kitayama, Markus, & Kurokawa, 2000; Schimmack, Oishi, & Diener, 2002). However, do East Asians perceive more mixed emotion when reading others’ emotional expressions? For example, do East Asians perceive more happiness in frowning faces and more anger in smiling faces than European Americans?  
 
@@ -84,13 +82,8 @@ FM1_h_dialmean_welch <- t.test(dataset1$h_dialmean ~ dataset1$nation)
 FM1_a_dialmean_welch <- t.test(dataset1$a_dialmean ~ dataset1$nation)
 FM1_h_dialmean_welch
 FM1_a_dialmean_welch
-d1_hmean_t$p.value
-d1_hmean_t$parameter
-d1_hmean_t$estimate
 
-d1_amean_t <- t.test(dataset1$a_dialmean~dataset1$nation)
-d2_hmean_t <- t.test(dataset2$h_dialmean~dataset2$nation)
-d2_amean_t <- t.test(dataset2$a_dialmean~dataset2$nation)
+
 ```
 
 # Results and Discussions
