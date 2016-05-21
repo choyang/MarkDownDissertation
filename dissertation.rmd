@@ -53,14 +53,18 @@ There are a number of mechanisms that can explain the higher emotion complexity 
 
 A second possibility involves   differences in the construal of the self (Markus & Kitayama, 1991). European American socialization contexts have traditionally embraced independence. The independent self-construal manifests in the emotional world as a perception of emotions as a reflection of the authentic self (Uchida, Townsend, Markus, & Bergsieker, 2009). East Asian traditions, on the other hand, have emphasized interdependence resulting in a tendency to see emotions as a reflection of the person’s interactions with other people (Uchida et al., 2009; Greenfield, 2013; Kashima et al., 1992). A recent analysis by Grossman et al (2015) showed that interdependence accounted for more cross-cultural difference than did dialecticism.
 
-Thus, both the dialectical tradition and the interdependent way of construing the self can lead to the perception of mixed emotion. For example, when faced with a smiling face, dialectical East Asians can easily imagine how a person’s situation may change for the worse, , resulting in the perception of both positive and negative emotions. Interdependent self-construal can also lead them to perceive mixed-valence emotion, by causing East Asians to guess multiple external social factors at the same time to explain a facial expression 
+Thus, both the dialectical tradition and the interdependent way of construing the self can lead to the perception of mixed emotion. For example, when faced with a smiling face, dialectical East Asians can easily imagine how a person’s situation may change for the worse, , resulting in the perception of both positive and negative emotions. Interdependent self-construal can also lead them to perceive mixed-valence emotion, by causing East Asians to guess multiple external social factors at the same time to explain a facial expression.
+
+#Culture’s influence on attribution style
+Cultural differences in cognitive style (Nisbett, Peng, Choi, & Norenzayan, 2001) can also affect the type of attributions people make when perceiving other peoples’ emotion (Shweder & Bourne, 1984). East Asians tend to perceive complex interactions between internal and external factors, whereas European Americans often make an internal attribution and underestimate the influence of external factors (Norenzayan & Nisbett, 2000). Similarly, Morris and Peng (1994) showed that Chinese newspapers tended to explain murders in terms of the situation, whereas American newspapers were more likely to explain the murders in terms of internal dispositions of the murderers. 
+We reasoned that cultural differences in attribution style would emerge in people’s appraisal of others’ emotion. People consider why the other person is feeling happiness, anger, surprise, and the like. Any expressed emotions can be the result of an innate trait, such as personality (internal attribution), or they can be the result of external factors, such as outside circumstances or other people (external attribution). Similar to our hypothesis, Masuda and his colleagues (2008) found that Japanese were more likely to reference social context in determining the emotional expression of a target individual, compared with European Americans. Thus, we predicted that East Asians would explain the emotions using more situational and fewer dispositional attributions. 
 
 # General Overview of the Present Study
 Our hypothesis is that when perceiving facial expressions, East Asians recognize more opposite-valence emotions in facial expressions (i.e., seeing anger in smiling faces) than European Americans. In order to test this hypothesis, we created a set of facial expressions varying in the model’s gender, race, expressivity, and valence, and asked Japanese and European American participants to judge the emotions of the person in each picture with scales for perception of 13 emotions.
 
 In order to further explore the hypothesis, Study 2 additionally observed whether  participants make internal or  external attributions when judging facial expressions . Our aim was to observe whether the tendency to make an internal attribution (thinking the person’s emotion expression is due to one’s character or personality) or external attribution (thinking that the person’s emotion expression is due to external factors outside the person) differs across cultures, as well as to see if this tendency mediates the relationship between culture and the perception of mixed emotion.  
 
-In Study 3, we used an open-ended essay format to investigate the perception of mixed emotion across cultures.  Our understanding of how emotions are recognized is easily constrained by the methods we use to ask about that process.  Although simpler for the researcher, closed-ended methods limit the participants’ possible answers and explanations to those the researcher has pre-determined as likely or appropriate.  In contrast, free-response methods allow participants greater freedom to explain their process of reading facial expressions. We expected that the Japanese participants would report more opposite valence emotions than European Americans in these open-ended essays when asked about their perception of facial expressions.
+In Study 3, we used an open-ended essay format to investigate the perception of mixed emotion across cultures.  Our understanding of how emotions are recognized is easily constrained by the methods we use to ask about that process.  Although simpler for the researcher, closed-ended methods limit the participants’ possible answers and explanations to those the researcher has pre-determined as likely or appropriate.  In contrast, free-response methods allow participants greater freedom to explain their process of reading facial expressions. We expected that the Japanese participants would report more opposite valence emotions than European Americans in these open-ended essays when asked about their perception of facial expressions. Also, we coded the appraisal patterns of subjects as well to get at the mechanism for dialectical emotoin perception. 
 
 # Study 1
 # Method
@@ -83,7 +87,6 @@ FM1_a_dialmean_welch <- t.test(dataset1$a_dialmean ~ dataset1$nation)
 FM1_h_dialmean_welch
 FM1_a_dialmean_welch
 
-
 ```
 
 # Results and Discussions
@@ -102,6 +105,33 @@ We used the same procedures and photographs (Beaupre & Hess, 2005) as in Study 1
 
 ## Results and Discussions
 *Perception of Dialectical Emotions*. To test our hypothesis about cultural difference in the perception of dialectical emotions in facial expressions, we created the same variable as in Study 1, which captured the mean number of opposite-valence emotions perceived across facial stimuli for each participant.  These counts were averaged across the four faces.  Using a repeated measures MANOVA, we tested for the between-subject factor of cultural group controlling for the within-subject factors of stimulus set, valence (smiling or frowning), and model race (White or Asian).  Replicating the results from Study 1, we found that Japanese participants (M=1.39, SE=0.15) reported more opposite-valence emotions than European American participants (M = 0.92, SE = 0.16; *F* (1, 107) = 4.88, *p* = .03; partial CI2= .04).  There were no significant effects of stimulus, race of the model, or emotional display.
+
+*Attributional Style and Dialectical Emotions*. 
+*Dispositional Attribution*.  We tested our prediction of cultural group differences using a repeated measures MANOVA.  We tested for the between-subject factor of cultural group and controlling for the effects of stimulus set; we additionally controlled for the within-subject factors of display type (smiling versus frowning) and model race (White, Asian).  As predicted, we found that European American participants (M=5.86, SE=0.18) made more attributions of the emotion to personality traits than Japanese participants (M=3.78, SE=0.18; F (1, 101) = 67.27, p < .001; partial η2= .40).  We also found an effect for the type of emotional display, such that greater dispositional attributions were made to smiling (M=5.81, SE=.16) than grimacing faces (M=3.83, SE=.17, F(1,101)=15.93, p<.001).
+
+*External attribution*.  We tested The three scales of external attribution (i.e., emotion caused by others, chance, and combination of factors) were reliable (α=.83).  Therefore, a summary variable was created which captured the mean of all three scales for each participant.  Surprisingly, European American participants (M=7.03, SE=.15) rated emotions as being caused more by external attributions than Japanese (M=5.83, SE=.15; F(1, 101)=33.21, p<.001; partial η2= .25).
+
+*Difference Score between Internal Attribution and External Attribution*. We computed difference score between interanl attribution and external attribution. 
+	
+	Mediation of Cultural Differences in Dialectical Emotion Perception by Attribution.  We tested whether cultural group differences in the recognition of opposite-valenced emotions in faces were mediated by dispositional attribution ratings using a bootstrap method (Preacher & Hayes, 2004).  The benefit of using a bootstrap method over a traditional series of regression analyses is that the bootstrap does not assume normality in the distribution of the dependent variable and ….  
+
+
+    DIRECT AND TOTAL EFFECTS
+            Coeff      s.e.         t  Sig(two)
+b(YX)       .2320     .0751    3.0904     .0025
+b(MX)     -2.1005     .2433   -8.6349     .0000
+b(YM.X)     .0778     .0289    2.6960     .0082
+b(YX.M)     .3954     .0949    4.1679     .0001
+
+INDIRECT EFFECT AND SIGNIFICANCE USING NORMAL DISTRIBUTION
+           Value      s.e.  LL 95 CI  UL 95 CI         Z  Sig(two)
+Effect    -.1635     .0639    -.2887    -.0382   -2.5579     .0105
+
+BOOTSTRAP RESULTS FOR INDIRECT EFFECT
+            Data      Mean      s.e.  LL 95 CI  UL 95 CI  LL 99 CI  UL 99 CI
+Effect    -.1635    -.1633     .0692    -.3091    -.0410    -.3632    -.0069
+
+
 
 In Study 3, we wanted to further explore attributions of emotions to investigate the reasons for the cultural differences in the perception of dialectical emotions. To do so, we used an open-ended method in addition to a closed-ended format, and content-coded participants’ essays.  
 Russell and colleagues (1993) refer to Woodworth and Schlosberg (1954) who describe facial expressions as having emotion labels that belong to “broad, overlapping cluster[s]...rather than specific, discrete basic emotions” (348).  Using the emotion terms described by participants, we created a set of emotion clusters to better capture participants’ descriptions of emotions. To test our hypotheses in the open-ended emotion data, we created groups of emotion words that are similar in valence, arousal level, and how they are communicated in real world. There were three steps in creating the emotion groups. First, the first author removed subjects' demographic information from the open-ended responses and coded each emotion word. Second, the first author created emotion groups out of similar words, using labels from research on basic emotion (Ekman, 1971) and appraisal research (Smith, 1985) as a general guide. Third, for each subject we coded the group as a 1 if they mentioned at least one word in the group and a 0 if they did not. 
